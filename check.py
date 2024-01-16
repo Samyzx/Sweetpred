@@ -1,6 +1,8 @@
-import numpy as np
-A = np.random.randn(4, 3)
+import pandas as pd
 
-B = np.sum(A, axis=1, keepdims=True)
+# Read the data
 
-print(B.shape)
+data = pd.read_csv('Descriptor_calculated.csv')
+# print the shape of the data
+
+print(data.head())
